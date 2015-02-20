@@ -31,7 +31,7 @@ b. cmake
 
 Compilation Instructions:
 
-a. cd GraphSegmentation <folder_ containing_GraphSegmentation_source>
+a. cd GraphSegmentation (folder_ containing_GraphSegmentation_source)
 
 b. mkdir build
 
@@ -39,12 +39,11 @@ c. cmake ..
 
 d. make
 
-Your binary will be in build/apps
-
+Your binary will be in build/apps.
 Example image has been provided with this code in img folder to test quickly.
 
 Execution command
 a) ./graph_segmentation ../../img/339.jpg 
 
-   ./<name_of_binary> <path_to_image>
+   ./(name_of_binary) (path_to_image)
 
