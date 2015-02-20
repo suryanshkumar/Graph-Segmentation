@@ -70,11 +70,11 @@ pedro::pedro(cv::Mat img, int k, int size)
  for (int i=0;i<height;i++)
   labels_seg[i]=new int [width];
   
-  color_r=new int [height*width];
-  color_g=new int [height*width];
-  color_b=new int [height*width];
-  cv::Mat o(height,width,CV_8UC3);
-  output_seg=o;
+ color_r=new int [height*width];
+ color_g=new int [height*width];
+ color_b=new int [height*width];
+ cv::Mat o(height,width,CV_8UC3);
+ output_seg=o;
 }
 
 void pedro::Evaluate()

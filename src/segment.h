@@ -64,7 +64,7 @@ static void normalize(std::vector<float> &mask)
 
 float square(float a)
 {
-	return a*a;
+  return a*a;
 }
 
 /* make filters */                             

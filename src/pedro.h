@@ -18,9 +18,9 @@ class pedro
 	
     pedro(cv::Mat img,int k,int size);
     
-	cv::Mat output_seg;
+    cv::Mat output_seg;
 
-	int **labels_seg;
+    int **labels_seg;
     
     int num_ccs;
 	
@@ -29,25 +29,25 @@ class pedro
 
 private:
    
-   cv::Mat r_s;
+    cv::Mat r_s;
    
-   int K;
+    int K;
    
-   int min_size;
+    int min_size;
 
-   cv::Mat g_s;
+    cv::Mat g_s;
    
-   cv::Mat b_s;
+    cv::Mat b_s;
    
-   cv::Mat scale;
+    cv::Mat scale;
    
-   int height;
+    int height;
    
-   int width;
+    int width;
    
-   int *color_r; 
+    int *color_r; 
    
-   int *color_g;
+    int *color_g;
    
-   int *color_b;
+    int *color_b;
 };
