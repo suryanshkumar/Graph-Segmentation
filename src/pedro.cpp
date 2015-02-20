@@ -88,34 +88,34 @@ void pedro::Evaluate()
     {
       if (x < width-1) 
       {
-	   edges[num].a = y * width + x;
-	   edges[num].b = y * width + (x+1);
-	   edges[num].w = diff(r_s, g_s, b_s, x, y, x+1, y);
-	   num++;
+	edges[num].a = y * width + x;
+	edges[num].b = y * width + (x+1);
+	edges[num].w = diff(r_s, g_s, b_s, x, y, x+1, y);
+	num++;
       }
 
       if (y < height-1) 
       {
-	   edges[num].a = y * width + x;
-	   edges[num].b = (y+1) * width + x;
-	   edges[num].w = diff(r_s, g_s, b_s, x, y, x, y+1);
-	   num++;
+	edges[num].a = y * width + x;
+	edges[num].b = (y+1) * width + x;
+	edges[num].w = diff(r_s, g_s, b_s, x, y, x, y+1);
+	num++;
       }
 
       if ((x < width-1) && (y < height-1)) 
       {
-       edges[num].a = y * width + x;
-	   edges[num].b = (y+1) * width + (x+1);
-	   edges[num].w = diff(r_s, g_s, b_s, x, y, x+1, y+1);
-	   num++;
+        edges[num].a = y * width + x;
+	edges[num].b = (y+1) * width + (x+1);
+	edges[num].w = diff(r_s, g_s, b_s, x, y, x+1, y+1);
+	num++;
       }
 
       if ((x < width-1) && (y > 0)) 
       {
-	   edges[num].a = y * width + x;
-	   edges[num].b = (y-1) * width + (x+1);
-	   edges[num].w = diff(r_s, g_s, b_s, x, y, x+1, y-1);
-	   num++;
+	edges[num].a = y * width + x;
+	edges[num].b = (y-1) * width + (x+1);
+	edges[num].w = diff(r_s, g_s, b_s, x, y, x+1, y-1);
+	num++;
       }
     }
   }
@@ -157,6 +157,7 @@ void pedro::Evaluate()
       }
       else
         labels_seg[y][x]=flag;
+
       output_seg.at<cv::Vec3b>(y,x)[0]=color_r[comp];
       output_seg.at<cv::Vec3b>(y,x)[1]=color_g[comp];
       output_seg.at<cv::Vec3b>(y,x)[2]=color_b[comp];
