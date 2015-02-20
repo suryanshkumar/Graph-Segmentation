@@ -2,7 +2,7 @@
 
 This algorithm for graph-segmentation is orignally 
 developed by Pedro F. Felzenszwalb. Its C++ implementation 
-is freely avilable by him under the terms of the GNU General Public License.
+is freely available by him under the terms of the GNU General Public License.
 
 Kindly, refer to his research work[1] for more details.: 
 [1]. Efficient Graph-Based Image Segmentation 
