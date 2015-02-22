@@ -1,10 +1,11 @@
 # GraphSegmentation
 
-This algorithm for graph-segmentation is orignally 
+This algorithm for graph-segmentation was originally 
 developed by Pedro F. Felzenszwalb. Its C++ implementation 
 is freely available by him under the terms of the GNU General Public License.
 
-Kindly, refer to his research work[1] for more details:
+If you use this software for research purposes, you should cite [1]. 
+Kindly, refer to his research work [1] for more details:
 
 [1]. Efficient Graph-Based Image Segmentation 
 
@@ -21,7 +22,8 @@ Moreover, OpenCV is one of the most widely used computer vision library, which m
 flexible to use. 
 
 In addition to this, Robot vision platform rarely uses raw image formats(.ppm, .pgm etc), most of the 
-time compressed image formats (say .jpg) are used. Hence, this algorithm can be easily integrated with ROS(OpenCV). 
+time compressed image formats (say .jpg) are used. Hence, this algorithm can now be easily integrated 
+with commonly used robot platform ROS(Robot Operating System). 
 
 To run this version of Software you must have few dependencies installed 
 
